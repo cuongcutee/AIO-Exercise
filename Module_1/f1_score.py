@@ -1,4 +1,5 @@
 import math
+
 def exercise1(tp,fp,fn):
     if type(tp) != int:
         print("tp must be int")
@@ -17,3 +18,4 @@ def exercise1(tp,fp,fn):
     f1_score = 2*((precision*recall)/(precision+recall))
     return f1_score
 
+print(round(exercise1(2,4,5),2))
