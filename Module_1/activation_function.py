@@ -1,4 +1,5 @@
 import math
+
 def is_number(n):
     try:
         float(n)
@@ -12,7 +13,7 @@ def exercise2():
     if is_number(x) == False:
         print("x must be a number")
         return
-    activation_function = input("activation_function = ")
+    activation_function = input("activation_function(sigmoid| relu| elu) = ")
     if activation_function != "sigmoid" and activation_function != "relu" and activation_function != "elu":
         print(f"{activation_function} is not supported")
         return
@@ -26,5 +27,5 @@ def exercise2():
         else:
             return float(x)
 
-
+print(exercise2())
       
