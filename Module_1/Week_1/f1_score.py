@@ -1,13 +1,13 @@
 import math
 
 def exercise1(tp,fp,fn):
-    if type(tp) != int:
+    if not isinstance(tp,int):
         print("tp must be int")
         return
-    if type(fp) != int:
+    if not isinstance(fp,int):
         print("fp must be int")
         return
-    if type(fn) != int:
+    if not isinstance(fn,int):
         print("fn must be int")
         return
     if tp < 0 or fp < 0 or fn < 0:
