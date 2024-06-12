@@ -27,5 +27,3 @@ def exercise2():
         else:
             return float(x)
 
-print(exercise2())
-      
