@@ -1,11 +1,13 @@
 import math
 
+
 def is_number(n):
     try:
         float(n)
     except ValueError:
         return False
     return True
+
 
 def exercise2():
     anpha = 0.01
@@ -20,10 +22,9 @@ def exercise2():
     if activation_function == "sigmoid":
         return 1/(1+math.exp(-float(x)))
     if activation_function == "relu":
-        return max(0,float(x))
+        return max(0, float(x))
     if activation_function == "elu":
         if float(x) < 0:
             return (math.exp(float(x)) - 1) * anpha
         else:
             return float(x)
-
