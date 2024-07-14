@@ -21,5 +21,5 @@ def levenshtein_distance(string_1,string_2):
                 c = matrix[i-1,j-1]+ sub_cost(string_1,string_2,i-1,j-1)                       
                 matrix[i,j]=min(a,b,c)
     return int(matrix[len(string_1),len(string_2)])
-print(levenshtein_distance('hola','hello'))
+print(levenshtein_distance('elmets','elements'))
 

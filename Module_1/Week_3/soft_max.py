@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-import math
 
 class Softmax(nn.Module):
     def __init__(self):
@@ -18,5 +17,4 @@ softmax=Softmax()
 data=torch.Tensor([1,2,3])
 output=softmax(data)
 print(output)
-
         
