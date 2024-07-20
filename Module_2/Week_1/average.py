@@ -7,3 +7,4 @@ for i in range(height):
     for j in range(width):
         gray_img_01[i][j] = sum(img[i][j])/3
 print(gray_img_01[0][0])
+print(gray_img_01[0][0])
